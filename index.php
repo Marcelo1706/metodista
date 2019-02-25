@@ -8,7 +8,7 @@ require_once("core/funcionesBase.php");
 verificar_sesion();
 
 //Cabecera de página
-require_once("home/header.php");
+require_once($config['home']."header.php");
 
 $url = isset($_SERVER['PATH_INFO']) ? explode('/', ltrim($_SERVER['PATH_INFO'],'/')) : '/';
 
@@ -16,17 +16,17 @@ $url = isset($_SERVER['PATH_INFO']) ? explode('/', ltrim($_SERVER['PATH_INFO'],'
 //La segunda parte es el archivo a llamar
 if($url == "/"){
 	//Si la URL Está vacía, procedemos a cargar el index
-	require_once("home/home.php");
+	require_once($config['home']."home.php");
 }else{
 	$folder = $url[0];
 	$archivo = $url[1];
 	if(file_exists($folder."/".$archivo.".php")){
 		require_once($folder."/".$archivo.".php");
 	} else {
-		require_once("home/error.php");
+		require_once($config['home']."error.php");
 	}
 }
 
 //requerimento del final de página
-require_once("home/footer.php");
+require_once($config['home']."footer.php");
 ?>

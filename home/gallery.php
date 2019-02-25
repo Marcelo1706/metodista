@@ -25,40 +25,40 @@
 
 							<div class="content">
 								<div class="media all people">
-									<a href="/metodista/images/fulls/01.jpg"><img src="/metodista/images/thumbs/01.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/01.jpg"><img src="<?php echo $config['img'] ?>thumbs/01.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all place">
-									<a href="/metodista/images/fulls/05.jpg"><img src="/metodista/images/thumbs/05.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/05.jpg"><img src="<?php echo $config['img'] ?>thumbs/05.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all thing">
-									<a href="/metodista/images/fulls/09.jpg"><img src="/metodista/images/thumbs/09.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/09.jpg"><img src="<?php echo $config['img'] ?>thumbs/09.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all people">
-									<a href="/metodista/images/fulls/02.jpg"><img src="/metodista/images/thumbs/02.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/02.jpg"><img src="<?php echo $config['img'] ?>thumbs/02.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all place">
-									<a href="/metodista/images/fulls/06.jpg"><img src="/metodista/images/thumbs/06.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/06.jpg"><img src="<?php echo $config['img'] ?>thumbs/06.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all thing">
-									<a href="/metodista/images/fulls/10.jpg"><img src="/metodista/images/thumbs/10.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/10.jpg"><img src="<?php echo $config['img'] ?>thumbs/10.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all people">
-									<a href="/metodista/images/fulls/03.jpg"><img src="/metodista/images/thumbs/03.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/03.jpg"><img src="<?php echo $config['img'] ?>thumbs/03.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all place">
-									<a href="/metodista/images/fulls/07.jpg"><img src="/metodista/images/thumbs/07.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/07.jpg"><img src="<?php echo $config['img'] ?>thumbs/07.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all thing">
-									<a href="/metodista/images/fulls/11.jpg"><img src="/metodista/images/thumbs/11.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/11.jpg"><img src="<?php echo $config['img'] ?>thumbs/11.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all people">
-									<a href="/metodista/images/fulls/04.jpg"><img src="/metodista/images/thumbs/04.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/04.jpg"><img src="<?php echo $config['img'] ?>thumbs/04.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all place">
-									<a href="/metodista/images/fulls/08.jpg"><img src="/metodista/images/thumbs/08.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/08.jpg"><img src="<?php echo $config['img'] ?>thumbs/08.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 								<div class="media all thing">
-									<a href="/metodista/images/fulls/12.jpg"><img src="/metodista/images/thumbs/12.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
+									<a href="<?php echo $config['img'] ?>fulls/12.jpg"><img src="<?php echo $config['img'] ?>thumbs/12.jpg" alt="" title="Colegio Metodista Ahuachapaneco." /></a>
 								</div>
 							</div>
 					</div>
@@ -82,7 +82,7 @@
 								}
 						</style>
 						<div>
-						<img src="/metodista/images/cole_logo.PNG">
+						<img src="<?php echo $config['img'] ?>cole_logo.PNG">
 						</div>
 					</div>
 			</section>
