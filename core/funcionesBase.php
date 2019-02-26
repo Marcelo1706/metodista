@@ -18,7 +18,7 @@ function login_usuario($config,$objBD,$carnet,$pass,$role){
 	} else {
 		if(count($datos) == 1){
 			$pass1 = $datos[0]['clave'];
-			if($pass1 == base64_encode(md5($pass))){
+			if($pass1 == base64_encode($pass)){
 				crear_sesion($config,$carnet,$role);
 			} else {
 				echo '
@@ -68,6 +68,57 @@ function crear_sesion($config,$carnet,$role){
 			$_SESSION['role'] = $role;
 			header('location: '.$_SESSION['location']);
 		break;
+	}
+}
+
+function registrar_admin($carnet,$pass1,$pass2,$objBD){
+	if($pass1 != $pass2){
+		echo '
+			<script type="text/javascript">
+				swal({
+					text: "Las contraseñas no coinciden",
+					icon: "warning",
+					button: "Aceptar"
+				})
+			</script>
+		';
+	} else {
+		if(count($objBD->leer_uno("administradores","*",array('usuario' => $carnet))) > 0){
+			echo '
+				<script type="text/javascript">
+					swal({
+						text: "Ya existe un administrador con ese carnet",
+						icon: "warning",
+						button: "Aceptar"
+					})
+				</script>
+			';
+		} else {
+			$valores = array(
+				'usuario' => $carnet,
+				'clave' => base64_encode($pass2)
+			);
+			$exito = $objBD->insertar("administradores",$valores);
+			if($exito == 1){
+				echo '
+					<script type="text/javascript">
+						swal({
+							text: "Administrador Registrado Exitosamente",
+							icon: "success",
+							button: "Aceptar"
+						})
+					</script>
+				';
+			}else{
+				echo '<script type="text/javascript">
+						swal({
+							text: "Error '.$exito.'",
+							icon: "error",
+							button: "Aceptar"
+						})
+					</script>';
+			}
+		}
 	}
 }
 ?>

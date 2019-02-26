@@ -51,5 +51,27 @@ class baseDatos {
             die();
         }
     }
+
+    public function insertar($tabla,$valores){
+        try {
+            $sQuery = "insert into $tabla(";
+            foreach($valores as $k => $v){
+                $aCampos[] = $k;
+                $aPlaceholder[] = ":".$k;
+            }
+            $campos = implode(",",$aCampos);
+            $placeholder = implode(",",$aPlaceholder);
+            $sQuery.= $campos.") Values (".$placeholder.")";
+            $query = $this->dbh->prepare($sQuery);
+            foreach ($valores as $k => &$v) {
+                $query->bindParam(":".$k,$v);
+            }
+            $query->execute();
+            return $query->rowCount();
+        } catch (PDOException $e) {
+            return "Error: ".$e->getMessage();
+            die();   
+        }
+    }
 }
 ?>
