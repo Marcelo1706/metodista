@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?php echo $config['css'] ?>bootstrap-material-design.min.css">
 	
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $config['img'] ?>favicon.png" />
+    <script src="<?php echo $config['js'] ?>sweetalert.min.js"></script>
     <title>.:: Colegio Metodista Ahuachapaneco ::.</title>
   </head>
   <body>

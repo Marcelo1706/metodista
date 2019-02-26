@@ -6,6 +6,7 @@ $config = array();
 $config['rutaBase'] = "metodista";
 
 //Datos de autenticación de la base de datos
+$config['host'] = "localhost";
 $config['nombreUsuario'] = "root"; //Usuario
 $config['clave'] = strrev(base64_decode("bHFzeW0=")); //Contraseña
 $config['baseDatos'] = "metodista";
